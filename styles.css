@@ -1,0 +1,46 @@
+body {
+    background-color: pink;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 600px; 
+    margin: 0 auto;
+    text-align: center; /* Center the images horizontally */
+}
+
+.slideshow-image {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent any extra space below images */
+    margin: 0 auto; /* Center the images within the container */
+    margin-bottom: 20px; /* Add some space between images */
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(137, 235, 255, 0.907);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
